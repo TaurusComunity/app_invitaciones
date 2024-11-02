@@ -4,7 +4,7 @@ const pool = require('../database');
 
 
 router.get('/index', (req, res) =>{
-    res.send('dashboard admin');
+    res.render('dashboard/index');
 });
 
 module.exports = router;    

@@ -3,11 +3,11 @@ const router = express.Router();
 const pool = require('../database');
 
 router.get('/', (req, res) =>{
-    res.send('login');
+    res.render('auth/login');
 });
 
 router.get('/signup', (req, res) =>{
-    res.send('signup');
+    res.render('auth/signup');
 });
 
 module.exports = router;    

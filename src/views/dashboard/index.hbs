@@ -1,0 +1,94 @@
+<title>Gestion Invitados</title>
+<link rel="stylesheet" href="/css/dash.css">
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+<body>
+    <div class="sidebar close">
+        <div class="logo-details">
+            <i class='fa fa-earth-americas'></i>
+            <span class="logo_name">Taurus Co</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='fa fa-home'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a class="link_name" href="#">Dashboard</a></li>
+                </ul>
+            </li>
+
+
+            <li>
+                <div class="profile-details">
+                    <div class="profile-content">
+                        <img src="/img/Turus.png" alt="profileImg">
+                    </div>
+                    <div class="name-job">
+                        <div class="profile_name">User log</div>
+                        <div class="job">Rol</div>
+                    </div>
+                    <i class='bx bx-log-out'></i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="home-content">
+            <i class='bx bx-menu'></i>
+            <span class="text">Bienvenido al sistema de invitaciones modernas</span>
+
+
+        </div>
+
+        <div class="contadores">
+            <div class="ag-courses_item">
+                <a class="ag-courses-item_link" href="#">
+                    <div class="ag-courses-item_bg"></div>
+                    <div class="ag-courses-item_title">Familias</div>
+                    <div class="ag-courses-item_date-box">
+                        <span class="ag-courses-item_date"> 10</span>
+                    </div>
+                </a>
+            </div>
+            <div class="ag-courses_item">
+                <a class="ag-courses-item_link" href="#">
+                    <div class="ag-courses-item_bg"></div>
+                    <div class="ag-courses-item_title">Invitados</div>
+                    <div class="ag-courses-item_date-box">
+                        <span class="ag-courses-item_date"> 55 </span>
+                    </div>
+
+                </a>
+            </div>
+
+
+        </div>
+
+        <div class="invitados">
+            <div class="card">
+                <p class="title1">3</p>
+                <p class="title2">Familia Perez</p>
+            </div>
+        </div>
+
+    </section>
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+                arrowParent.classList.toggle("showMenu");
+            });
+        }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu");
+        console.log(sidebarBtn);
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        });
+    </script>
+</body>
