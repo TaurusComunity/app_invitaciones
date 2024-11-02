@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const eventDate = new Date("December 15, 2024 05:30:00").getTime();
+    const eventDate = new Date("December 14, 2024 05:30:00").getTime();
 
     const countdown = setInterval(() => {
         const now = new Date().getTime();
@@ -52,3 +52,25 @@ document.addEventListener('DOMContentLoaded', () => {
     //return /Mobi|Android/i.test(navigator.userAgent);
   //}
   
+  // Selección de los elementos del modal
+// Obtener elementos
+const openModalBtn = document.getElementById('openModalBtn');
+const closeModalBtn = document.getElementById('closeModal');
+const modal = document.getElementById('modal');
+
+// Abrir modal al hacer clic en el botón
+openModalBtn.addEventListener('click', () => {
+  modal.classList.add('active');
+});
+
+// Cerrar modal al hacer clic en la "X"
+closeModalBtn.addEventListener('click', () => {
+  modal.classList.remove('active');
+});
+
+// Cerrar modal al hacer clic fuera del contenido del modal
+window.addEventListener('click', (event) => {
+  if (event.target === modal) {
+    modal.classList.remove('active');
+  }
+});
