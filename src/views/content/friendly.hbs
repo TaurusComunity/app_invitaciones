@@ -1,0 +1,320 @@
+<title>Baby Shower</title>
+<link rel="stylesheet" href="/css/index.css">
+{{!-- <body>
+{{#if user}}
+    <section class="contenedor">
+        <main class="contenido panel"></main>
+       
+    </section>
+
+{{else}}
+<p>Debe iniciar sesion primero <a href="/">Iniciar Sesion</a></p>
+{{/if}} --}}
+    
+<body class="p-8">
+    <audio id="audioCargar" src="/sound/song.mpeg" preload="auto" loop></audio>
+
+    <section
+      class="text-center flex flex-col justify-center"
+      data-aos="fade-up"
+    >
+      <p class="text-[#FFB0B0] font-semibold text-[20px]">
+        En honor al nacimiento de:
+      </p>
+      <h1 class="nombre font-black text-[41px] -mt-[15px]">Adahra Salomé</h1>
+      <div
+        class="flex text-[12px] items-center justify-between font-bold -mt-[16px]"
+        data-aos="fade-right"
+      >
+        <h3>Zamudio</h3>
+        <h3>Medina</h3>
+      </div>
+      <div
+        class="relative flex flex-col justify-center items-center"
+        data-aos="zoom-in"
+      >
+        <div class="bg-[#FFB0B0] h-[300px] w-[300px] rounded-full"></div>
+        <img src="/img/oso.svg" alt="oso" class="-mt-[25px] absolute top-0" />
+      </div>
+      <div class="relative" data-aos="fade-left">
+        <p class="parrafo1 text-[#B17457] font-semibold text-[20px]">
+          La dulce espera está por terminar, su llegada completa nuestro amor y
+          en nuestra familia habrá una sonrisa iluminando nuestras vidas.
+        </p>
+      </div>
+    </section>
+
+    <section
+      class="text-center flex flex-col items-center justify-center"
+      data-aos="fade-up"
+    >
+      <h1 class="padres font-black text-[40px] -mt-[15px]">
+        Julieth, Jhoann & Nikolay
+      </h1>
+      <div class="mt-5" data-aos="fade-up">
+        <p class="text-[#FFB0B0] font-semibold text-[20px]">
+          Están muy felices y nos gustaría que estén en la primera fiestita que
+          haremos en su honor para darle la bienvenida al mundo.
+        </p>
+      </div>
+      <div
+        class="mt-5 flex flex-col justify-center items-center gap-2"
+        data-aos="fade-up"
+      >
+        <img src="/img/eco1.svg" alt="" data-aos="flip-left" />
+        <img src="/img/eco2.svg" alt="" data-aos="flip-right" />
+      </div>
+    </section>
+
+    <section
+      class="text-center flex flex-col items-center justify-center mt-8"
+      data-aos="fade-up"
+    >
+      <p class="text-[#FFB0B0] font-semibold text-[20px]">
+        Estas cordialmente invitad@ al:
+      </p>
+      <h1 class="font-black text-[45px] -mt-[15px]">Baby Shower</h1>
+
+      <div class="osos relative flex flex-col justify-center items-center">
+        <img src="/img/familia oso.svg" alt="familia oso" class="" />
+      </div>
+
+      <div class="text-center mt-10 px-12">
+        Tiempo restante para el gran día:
+        <div class="flex gap-4 text-center">
+          <div class="bg-white shadow rounded-lg p-4">
+            <span id="days" class="text-4xl font-bold text-[#FFB0B0]">00</span>
+            <p class="text-[#B17457] font-semibold">Días</p>
+          </div>
+          <div class="bg-white shadow rounded-lg p-4">
+            <span id="hours" class="text-4xl font-bold text-[#FFB0B0]">00</span>
+            <p class="text-[#B17457] font-semibold">Horas</p>
+          </div>
+          <div class="bg-white shadow rounded-lg p-4">
+            <span id="minutes" class="text-4xl font-bold text-[#FFB0B0]"
+              >00</span
+            >
+            <p class="text-[#B17457] font-semibold">Minutos</p>
+          </div>
+          <div class="bg-white shadow rounded-lg p-4">
+            <span id="seconds" class="text-4xl font-bold text-[#FFB0B0]"
+              >00</span
+            >
+            <p class="text-[#B17457] font-semibold">Segundos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-center flex flex-col items-center justify-center mt-8">
+      <div class="card">
+        <section class="landscape-section">
+          <div class="sky"></div>
+          <div class="sun"></div>
+          <div class="hill-1"></div>
+          <div class="hill-2"></div>
+          <div class="ocean">
+            <div class="reflection"></div>
+            <div class="reflection"></div>
+            <div class="reflection"></div>
+            <div class="reflection"></div>
+            <div class="reflection"></div>
+            <div class="shadow-hill-1"></div>
+            <div class="shadow-hill-2"></div>
+          </div>
+          <div class="hill-3"></div>
+          <div class="hill-4"></div>
+          <div class="tree-1">
+            <svg
+              stroke-width="0.00064"
+              stroke="#b77873"
+              fill="#b77873"
+              xml:space="preserve"
+              viewBox="0 0 64.00 64.00"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              id="Layer_1"
+              version="1.0"
+            >
+              <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+              <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                id="SVGRepo_tracerCarrier"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M32,0C18.148,0,12,23.188,12,32c0,9.656,6.883,17.734,16,19.594V60c0,2.211,1.789,4,4,4s4-1.789,4-4v-8.406 C45.117,49.734,52,41.656,52,32C52,22.891,46.051,0,32,0z"
+                  fill="#b77873"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="tree-2">
+            <svg
+              stroke-width="0.00064"
+              stroke="#b77873"
+              fill="#b77873"
+              xml:space="preserve"
+              viewBox="0 0 64.00 64.00"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns="http://www.w3.org/2000/svg"
+              id="Layer_1"
+              version="1.0"
+            >
+              <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+              <g
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                id="SVGRepo_tracerCarrier"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M32,0C18.148,0,12,23.188,12,32c0,9.656,6.883,17.734,16,19.594V60c0,2.211,1.789,4,4,4s4-1.789,4-4v-8.406 C45.117,49.734,52,41.656,52,32C52,22.891,46.051,0,32,0z"
+                  fill="#b77873"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="tree-3">
+            <svg
+              version="1.0"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 64.00 64.00"
+              xml:space="preserve"
+              fill="#a16773"
+              stroke="#a16773"
+              stroke-width="0.00064"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill="#a16773"
+                  d="M32,0C18.148,0,12,23.188,12,32c0,9.656,6.883,17.734,16,19.594V60c0,2.211,1.789,4,4,4s4-1.789,4-4v-8.406 C45.117,49.734,52,41.656,52,32C52,22.891,46.051,0,32,0z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <div class="filter"></div>
+        </section>
+
+        <section class="content-section">
+          <div class="weather-info">
+            <div class="left-side">
+              <div class="icon">
+                <svg
+                  stroke="#000000"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <g stroke-width="0" id="SVGRepo_bgCarrier"></g>
+                  <g
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    id="SVGRepo_tracerCarrier"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      stroke-linecap="round"
+                      stroke-width="1.5"
+                      stroke="#ffffff"
+                      d="M22 14.3529C22 17.4717 19.4416 20 16.2857 20H11M14.381 9.02721C14.9767 8.81911 15.6178 8.70588 16.2857 8.70588C16.9404 8.70588 17.5693 8.81468 18.1551 9.01498M7.11616 11.6089C6.8475 11.5567 6.56983 11.5294 6.28571 11.5294C3.91878 11.5294 2 13.4256 2 15.7647C2 18.1038 3.91878 20 6.28571 20H7M7.11616 11.6089C6.88706 10.9978 6.7619 10.3369 6.7619 9.64706C6.7619 6.52827 9.32028 4 12.4762 4C15.4159 4 17.8371 6.19371 18.1551 9.01498M7.11616 11.6089C7.68059 11.7184 8.20528 11.9374 8.66667 12.2426M18.1551 9.01498C18.8381 9.24853 19.4623 9.60648 20 10.0614"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <p>Invitación Especial</p>
+            </div>
+            <div class="right-side">
+              <div class="location">
+                <div class="flex justify-center items-center">
+                  <svg
+                    version="1.0"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="64px"
+                    height="64px"
+                    viewBox="0 0 64 64"
+                    xml:space="preserve"
+                    fill="#ffffff"
+                    stroke="#ffffff"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        fill="#ffffff"
+                        d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24 C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24 C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <span>Salon comunal</span>
+                </div>
+              </div>
+              <p>Sábado, 15 diciembre 2024</p>
+              <p class="temperature">5:40 p.m.</p>
+            </div>
+          </div>
+          <div class="forecast">
+            <div>
+              <p>Direccion:</p>
+              <p>Calle 58c sur #42 - 28, Bogotá</p>
+            </div>
+            <div class="separator"></div>
+            <div>
+              <p>Regalo:</p>
+              <p>Obsequi + 2 pañales</p>
+            </div>
+            <div class="separator"></div>
+            <div>
+              <p>Contacto:</p>
+              <div>
+                <p><a href="">302 830 7706</a></p>
+                <p><a href="">324 247 9427</a></p>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+
+
+  
+        <div class="flex flex-col mx-3 bg-white rounded-lg">
+           <div class="w-full draggable">
+    <div class="container flex flex-col mx-auto">
+      <div class="flex flex-col items-center w-full my-20">
+        <span class="mb-8">
+          <img src="/img/Turus.png" alt="logo" class="w-[150px]">
+        </span>
+       
+        <div class="flex items-center">
+          <p class="text-base font-normal leading-7 text-center text-grey-700">
+            Hecho con <i class="fa fa-heart"></i> por <a href="">Taurus Comunity CO</a></p>
+        </div>
+        <div class="flex items-center">
+            <p class="text-[10px] font-normal leading-7 text-center text-grey-700">
+             Todos los derechos reservados | Taurus Comunity CO 2024</p>
+          </div>
+      </div>
+    </div>
+  </div>
+        </div>
+     
+
+  </body>
