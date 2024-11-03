@@ -1,0 +1,5 @@
+mysql://root:vqwUTtmrsgkuXWgPitfjqsJpNPKWMkZJ@junction.proxy.rlwy.net:10767/railway
+
+mysql -hjunction.proxy.rlwy.net -uroot -pvqwUTtmrsgkuXWgPitfjqsJpNPKWMkZJ --port 10767 --protocol=TCP railway
+
+railway connect MySQL
