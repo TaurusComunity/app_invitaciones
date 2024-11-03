@@ -248,7 +248,7 @@
         <div class="modal" id="modal">
             <div class="modal-content">
                 <span class="close" id="closeModal">&times;</span>
-                <form class="form sm:flex sm:flex-col sm:items-center">
+                <form class="form sm:flex sm:flex-col sm:items-center" method="post" action="/addFamily">
                     <div class="sm:flex sm:flex-col sm:items-center lg:flex lg:justify-start lg:gap-5">
                         <div class="icon ml-[0px] my-[10px] mr-[5px]">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 34 34" height="34"
@@ -267,18 +267,18 @@
                             </svg>
                         </div>
                         <div class="note">
-                            <label class="title">Registra tu asistencia <i class="fa fa-heart"></i></label>
+                            <label class="title">Registra tu asistencia <i class="fa fa-heart text-red"></i></label>
                             <span class="subtitle">Este registro es importante para contar contigo en todo aspecto,
                                 llena
                                 los campos correspondientes.</span>
                         </div>
                     </div>
 
-                    <input placeholder="Nombre familia" title="familia" name="familia" type="text" class="input_field">
+                    <input placeholder="Nombre familia" title="familia" name="nombre_familia" type="text" class="input_field">
                     <input placeholder="Cantidad participantes" title="Participantes" name="participantes" type="number"
                         class="input_field">
                         <div class="flex justify-start items-center w-full">
-                          <button class="button">
+                          <button class="button" type="submit">
                         <span class="button_lg">
                             <span class="button_sl"></span>
                             <span class="button_text">Registrar familia</span>

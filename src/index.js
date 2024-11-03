@@ -1,8 +1,13 @@
-const express = require('express');
-const morgan = require('morgan');
+const express = require("express");
+const morgan = require("morgan");
 const exphbs = require("express-handlebars");
-const path = require('path');
+const path = require("path");
+const flash = require("connect-flash");
+const session = require("express-session");
+const MySQLStore = require("express-mysql-session")(session);
+const passport = require("passport");
 
+const { database } = require("./keys");
 // initializations
 const app = express();
 
@@ -22,6 +27,15 @@ app.engine(
 app.set("view engine", ".hbs");
 
 // middleware
+app.use(
+  session({
+    secret: "secretKey",
+    resave: false,
+    saveUninitialized: false,
+    store: new MySQLStore(database),
+  })
+);
+app.use(flash());
 app.use(morgan('dev'));
 app.use(express.urlencoded({
     extended: false
@@ -30,20 +44,24 @@ app.use(express.json())
 
 // global variables
 app.use((req, res, next)=>{
+    app.locals.success = req.flash('success');
+    app.locals.error = req.flash("error");
     next();
 })
 
 // routes
 app.use(require('./routes'));
-app.use('/content', require('./routes/content'));
 app.use('/dashboard', require('./routes/dashboard'));
 
 // public files
 app.use(express.static(path.join(__dirname, 'public')))
 
 // start server
-app.listen(app.get('port'), () => {
-    console.log(">>> Server run on port: ", app.get('port'));
-    
-})
-
+// iniciar el servidor
+try {
+  app.listen(app.get("port"), "0.0.0.0", () => {
+      console.log(">>> Servidor corriendo en el puerto:", app.get("port"));
+  });
+} catch (error) {
+  console.error("Error al iniciar el servidor:", error);
+}
