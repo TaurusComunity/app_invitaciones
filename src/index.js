@@ -1,4 +1,3 @@
-require('dotenv').config();
 const express = require("express");
 const morgan = require("morgan");
 const exphbs = require("express-handlebars");
@@ -9,6 +8,10 @@ const MySQLStore = require("express-mysql-session")(session);
 const passport = require("passport");
 
 const { database } = require("./keys");
+
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
 // initializations
 const app = express();
 
